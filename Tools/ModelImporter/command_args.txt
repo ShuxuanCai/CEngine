@@ -1,0 +1,18 @@
+-scale 0.01 -animOnly 0 ../../Assets/Models/Character/Ch35_nonPBR.fbx ../../Assets/Models/Character/Ch35_nonPBR.model
+
+-scale 0.01 -animOnly 1 ../../Assets/Models/Character/firing_rifle.fbx ../../Assets/Models/Character/firing_rifle.model
+-scale 0.01 -animOnly 1 ../../Assets/Models/Character/hit_reaction.fbx ../../Assets/Models/Character/hit_reaction.model
+-scale 0.01 -animOnly 1 ../../Assets/Models/Character/reloading.fbx ../../Assets/Models/Character/reloading.model
+-scale 0.01 -animOnly 1 ../../Assets/Models/Character/rifle_aiming_idle.fbx ../../Assets/Models/Character/rifle_aiming_idle.model
+-scale 0.01 -animOnly 1 ../../Assets/Models/Character/rifle_jump.fbx ../../Assets/Models/Character/rifle_jump.model
+-scale 0.01 -animOnly 1 ../../Assets/Models/Character/rifle_run.fbx ../../Assets/Models/Character/rifle_run.model
+-scale 0.01 -animOnly 1 ../../Assets/Models/Character/run_backwards.fbx ../../Assets/Models/Character/run_backwards.model
+-scale 0.01 -animOnly 1 ../../Assets/Models/Character/strafe.fbx ../../Assets/Models/Character/strafe.model
+-scale 0.01 -animOnly 1 ../../Assets/Models/Character/strafe_2.fbx ../../Assets/Models/Character/strafe_2.model
+-scale 0.01 -animOnly 1 ../../Assets/Models/Character/strafe_left.fbx ../../Assets/Models/Character/strafe_left.model
+-scale 0.01 -animOnly 1 ../../Assets/Models/Character/strafe_right.fbx ../../Assets/Models/Character/strafe_right.model
+-scale 0.01 -animOnly 1 ../../Assets/Models/Character/toss_grenade.fbx ../../Assets/Models/Character/toss_grenade.model
+-scale 0.01 -animOnly 1 ../../Assets/Models/Character/turn_left.fbx ../../Assets/Models/Character/turn_left.model
+-scale 0.01 -animOnly 1 ../../Assets/Models/Character/turning_right_45_degrees.fbx ../../Assets/Models/Character/turning_right_45_degrees.model
+-scale 0.01 -animOnly 1 ../../Assets/Models/Character/walking.fbx ../../Assets/Models/Character/walking.model
+-scale 0.01 -animOnly 1 ../../Assets/Models/Character/walking_backwards.fbx ../../Assets/Models/Character/walking_backwards.model

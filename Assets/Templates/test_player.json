@@ -1,0 +1,20 @@
+{
+  "Components": {
+    "TransformComponent": {
+      "Position": [ 0.0, 4.0, 0.0 ]
+    },
+    "ModelComponent": {
+      "FileName": "../../Assets/Models/Character/Ch35_nonPBR.model",
+      "Animations": [
+        "../../Assets/Models/Character/rifle_aiming_idle.model"
+      ]
+    },
+    "ColiderComponent": {
+      "Extents": [ 0.5, 1.0, 0.5 ],
+      "Origin": [ 0.0, -0.5, 0.0 ]
+    },
+    "RigidBodyComponent": {
+      "Mass":  2.0
+    }
+  }
+}

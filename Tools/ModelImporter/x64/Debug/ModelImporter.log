@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\lcv2032525\Desktop\CEngine\Tools\ModelImporter\main.cpp(38,26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  ModelImporter.vcxproj -> C:\Users\lcv2032525\Desktop\CEngine\x64\Debug\ModelImporter.exe
+  C:\Users\lcv2032525\Desktop\CEngine\External\assimp-5.0.1\Bin\assimp-vc142-mt.dll
+          1 file(s) copied.

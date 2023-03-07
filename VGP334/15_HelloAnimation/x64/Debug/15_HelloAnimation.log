@@ -1,0 +1,22 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (13_HelloModel.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  GameState.cpp
+C:\Users\lcv2032525\Desktop\CEngine_336\CEngine\VGP334\15_HelloAnimation\GameState.cpp(32,50): error C2664: 'CEngine::Graphics::RenderGroup CEngine::Graphics::CreatingRenderGroup(const CEngine::Graphics::ModelID &,const CEngine::Graphics::Animator *)': cannot convert argument 1 from 'CEngine::Graphics::Model' to 'const CEngine::Graphics::ModelID &'
+C:\Users\lcv2032525\Desktop\CEngine_336\CEngine\VGP334\15_HelloAnimation\GameState.cpp(32,50): message : Reason: cannot convert from 'CEngine::Graphics::Model' to 'const CEngine::Graphics::ModelID'
+C:\Users\lcv2032525\Desktop\CEngine_336\CEngine\VGP334\15_HelloAnimation\GameState.cpp(32,35): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\lcv2032525\Desktop\CEngine_336\CEngine\Framework\Graphics\Inc\RenderObject.h(35,28): message : see declaration of 'CEngine::Graphics::CreatingRenderGroup'
+C:\Users\lcv2032525\Desktop\CEngine_336\CEngine\VGP334\15_HelloAnimation\GameState.cpp(85,65): error C2664: 'void CEngine::Graphics::AnimationUtil::ComputeBoneTransform(CEngine::Graphics::ModelID,CEngine::Graphics::AnimationUtil::BoneTransforms &,const CEngine::Graphics::Animator *)': cannot convert argument 1 from '_Ty' to 'CEngine::Graphics::ModelID'
+          with
+          [
+              _Ty=CEngine::Graphics::Skeleton
+          ]
+C:\Users\lcv2032525\Desktop\CEngine_336\CEngine\VGP334\15_HelloAnimation\GameState.cpp(85,40): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\lcv2032525\Desktop\CEngine_336\CEngine\Framework\Graphics\Inc\AnimationUtil.h(9,7): message : see declaration of 'CEngine::Graphics::AnimationUtil::ComputeBoneTransform'
+C:\Users\lcv2032525\Desktop\CEngine_336\CEngine\VGP334\15_HelloAnimation\GameState.cpp(86,57): error C2664: 'void CEngine::Graphics::AnimationUtil::DrawSkeleton(CEngine::Graphics::ModelID,const CEngine::Graphics::AnimationUtil::BoneTransforms &)': cannot convert argument 1 from '_Ty' to 'CEngine::Graphics::ModelID'
+          with
+          [
+              _Ty=CEngine::Graphics::Skeleton
+          ]
+C:\Users\lcv2032525\Desktop\CEngine_336\CEngine\VGP334\15_HelloAnimation\GameState.cpp(86,32): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\lcv2032525\Desktop\CEngine_336\CEngine\Framework\Graphics\Inc\AnimationUtil.h(11,7): message : see declaration of 'CEngine::Graphics::AnimationUtil::DrawSkeleton'
+  WinMain.cpp
+  Generating Code...

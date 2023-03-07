@@ -1,0 +1,13 @@
+C:\Users\lcv2032525\Desktop\CEngine\External\DirectXTK\Bin\Desktop_2019\x64\Debug\DirectXTK.lib
+C:\Users\caish\Downloads\CEngine (2)\CEngine\External\DirectXTK\Bin\Desktop_2019\x64\Debug\DirectXTK.lib
+C:\Users\caish\Downloads\CEngine (2)\CEngine\External\DirectXTK\Bin\Desktop_2019\x64\Debug\DirectXTK.pdb
+C:\Users\caish\Downloads\CEngine (1) (1)\CEngine\External\DirectXTK\Bin\Desktop_2019\x64\Debug\DirectXTK.lib
+C:\Users\caish\Downloads\CEngine (1) (1)\CEngine\External\DirectXTK\Bin\Desktop_2019\x64\Debug\DirectXTK.pdb
+C:\Users\lcv2032525\Desktop\CEngine_336\CEngine\External\DirectXTK\Bin\Desktop_2019\x64\Debug\DirectXTK.lib
+C:\Users\caish\Downloads\CEngine_336_Week3\CEngine_336\CEngine\External\DirectXTK\Bin\Desktop_2019\x64\Debug\DirectXTK.lib
+C:\Users\caish\Downloads\CEngine_336_Week3\CEngine_336\CEngine\External\DirectXTK\Bin\Desktop_2019\x64\Debug\DirectXTK.pdb
+C:\Users\lcv2032525.LCIEDUCATION\Desktop\CEngine\External\DirectXTK\Bin\Desktop_2019\x64\Debug\DirectXTK.lib
+C:\Users\caish\Downloads\CEngine\CEngine\External\DirectXTK\Bin\Desktop_2019\x64\Debug\DirectXTK.lib
+C:\Users\caish\Downloads\CEngine\CEngine\External\DirectXTK\Bin\Desktop_2019\x64\Debug\DirectXTK.pdb
+F:\CEngine\CEngine\External\DirectXTK\Bin\Desktop_2019\x64\Debug\DirectXTK.lib
+F:\CEngine\CEngine\External\DirectXTK\Bin\Desktop_2019\x64\Debug\DirectXTK.pdb

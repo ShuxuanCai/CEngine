@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Inc">
+      <UniqueIdentifier>{d81c5e5e-a7cb-4d97-8e49-c151e8fb9719}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{1b96a44f-9923-4864-9f61-2df530ca3469}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\App">
+      <UniqueIdentifier>{300fab38-966b-4712-93b8-4266ac2544a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\App">
+      <UniqueIdentifier>{eb95a87b-77fe-4628-84e1-f9c8bc02e386}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Pch">
+      <UniqueIdentifier>{90193e7a-c2f9-4a61-8761-f440fbc1e514}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\World">
+      <UniqueIdentifier>{35ef0395-920c-40bf-8fcd-10b60b99c1d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\World">
+      <UniqueIdentifier>{fd9957f6-5496-41bd-ae3c-42220f83565d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RapidJson">
+      <UniqueIdentifier>{c40c64af-6a25-4a16-bfc2-0afe546c7dd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Physics">
+      <UniqueIdentifier>{7fd49f0c-60c3-40d7-8a43-49a718197041}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\Physics">
+      <UniqueIdentifier>{3df04550-9acf-4c33-a5a4-2dae2af35e0a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Inc\CEngine.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Common.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\App.h">
+      <Filter>Inc\App</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\AppState.h">
+      <Filter>Inc\App</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Precompiled.h">
+      <Filter>Src\Pch</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Component.h">
+      <Filter>Inc\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\GameObject.h">
+      <Filter>Inc\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\TypeIds.h">
+      <Filter>Inc\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\GameWorld.h">
+      <Filter>Inc\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\GameObjectHandle.h">
+      <Filter>Inc\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\GameObjectFactory.h">
+      <Filter>Inc\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\TransformComponent.h">
+      <Filter>Inc\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Service.h">
+      <Filter>Inc\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\CameraService.h">
+      <Filter>Inc\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\CameraComponent.h">
+      <Filter>Inc\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\FPSCameraControllerComponent.h">
+      <Filter>Inc\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\RenderService.h">
+      <Filter>Inc\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\ModelComponent.h">
+      <Filter>Inc\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\AnimatorComponent.h">
+      <Filter>Inc\World</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\allocators.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\cursorstreamwrapper.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\document.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\encodedstream.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\encodings.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\error\en.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\error\error.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\filereadstream.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\filewritestream.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\fwd.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\internal\biginteger.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\internal\clzll.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\internal\diyfp.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\internal\dtoa.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\internal\ieee754.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\internal\itoa.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\internal\meta.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\internal\pow10.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\internal\regex.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\internal\stack.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\internal\strfunc.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\internal\strtod.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\internal\swap.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\istreamwrapper.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\memorybuffer.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\memorystream.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\msinttypes\inttypes.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\msinttypes\stdint.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\ostreamwrapper.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\pointer.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\prettywriter.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\rapidjson.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\reader.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\schema.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\stream.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\stringbuffer.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\uri.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson\rapidjson\writer.h">
+      <Filter>RapidJson</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\ColiderComponent.h">
+      <Filter>Inc\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\PhysicsComponent.h">
+      <Filter>Inc\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\PhysicsService.h">
+      <Filter>Inc\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\RigidBodyComponent.h">
+      <Filter>Inc\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\PhysicsDebugDrawer.h">
+      <Filter>Inc\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\MeshComponent.h">
+      <Filter>Inc\World</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\App.cpp">
+      <Filter>Src\App</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Precompiled.cpp">
+      <Filter>Src\Pch</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\CEngine.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\GameObject.cpp">
+      <Filter>Src\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\GameWorld.cpp">
+      <Filter>Src\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\GameObjectFactory.cpp">
+      <Filter>Src\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\TransformComponent.cpp">
+      <Filter>Src\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\CameraService.cpp">
+      <Filter>Src\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\CameraComponent.cpp">
+      <Filter>Src\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\FPSCameraControllerComponent.cpp">
+      <Filter>Src\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\RenderService.cpp">
+      <Filter>Src\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ModelComponent.cpp">
+      <Filter>Src\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\AnimatorComponent.cpp">
+      <Filter>Src\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\RigidBodyComponent.cpp">
+      <Filter>Src\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ColiderComponent.cpp">
+      <Filter>Src\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\PhysicsComponent.cpp">
+      <Filter>Src\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\PhysicsService.cpp">
+      <Filter>Src\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\PhysicsDebugDrawer.cpp">
+      <Filter>Src\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\MeshComponent.cpp">
+      <Filter>Src\World</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
