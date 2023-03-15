@@ -44,6 +44,7 @@ void AnimationUtil::ComputeBoneTransform(ModelID id, BoneTransforms& boneTransfo
 void AnimationUtil::ApplyBoneOffset(ModelID id, BoneTransforms& boneTransforms)
 {
 	auto model = ModelManager::Get()->GetModel(id);
+	boneTransforms.resize(model->skeleton->bones.size(), Math::Matrix4::Identity());
 	for (auto& bone : model->skeleton->bones)
 	{
 		boneTransforms[bone->index] = bone->offsetTransform * boneTransforms[bone->index];

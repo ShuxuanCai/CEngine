@@ -105,7 +105,7 @@ void StandardEffect::Render(const RenderObject& renderObject)
 		settingData.useBumpMap = 0;
 	if (mSettingData.useNormalMap == 0 || renderObject.normalMapId == 0)
 		settingData.useNormalMap = 0;
-	//settingData.useSkinning = (renderObject.skeleton != nullptr);
+	settingData.useSkinning = (renderObject.skeleton != nullptr);
 	mSettingBuffer.Update(settingData);
 
 	auto tm = TextureManager::Get();

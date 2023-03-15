@@ -10,7 +10,7 @@ namespace CEngine::Graphics
 	public:
 		void PlayAnimation(ModelID id, int clipIndex, bool looping);
 		void Update(float deltaTime);
-		Transform GetToParentTransfore(const Bone* bone) const;
+		bool GetToParentTransfore(const Bone* bone, Transform& toParentTransform) const;
 		float GetAnimationTick() const { return mAnimationTick; }
 		bool IsLooping() const { return mLooping; }
 

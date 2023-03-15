@@ -34,16 +34,19 @@ void BlendNode::Update(float deltaTime)
 	}
 }
 
-Transform BlendNode::GetToParentTransfore(const Bone* bone) const
+bool BlendNode::GetToParentTransfore(const Bone* bone, Transform& toParentTransform) const
 {
+	toParentTransform = Transform();
 	auto model = ModelManager::Get()->GetModel(mModelID);
 	const auto& animClip = model->animationClips[mClipIndex];
 	auto& animation = animClip.boneAnimations[bone->index];
 	if (animation == nullptr)
 	{
-		return Transform();
+		return false;
 	}
-	return animation->GetTransform(mAnimationTick);
+
+	toParentTransform = animation->GetTransform(mAnimationTick);
+	return true;
 }
 
 void Animator::Initialize(ModelID id)
@@ -108,20 +111,25 @@ size_t Animator::GetAnimationCount() const
 
 Math::Matrix4 Animator::GetToParentTransfore(const Bone* bone) const
 {
-	auto fromTransform = mCurrentAnim.GetToParentTransfore(bone);
-	if (mNextClipIndex != -1)
+	Transform fromTransform, toTransform;
+	if (mCurrentAnim.GetToParentTransfore(bone, fromTransform))
 	{
-		float t = Math::Clamp(mBlendTime / mBlendDuration, 0.0f, 1.0f);
-		auto toTransform = mNextAnim.GetToParentTransfore(bone);
+		if (mNextClipIndex != -1)
+		{
+			float t = Math::Clamp(mBlendTime / mBlendDuration, 0.0f, 1.0f);
+			if (mNextAnim.GetToParentTransfore(bone, toTransform))
+			{
+				Transform blendtransform;
+				blendtransform.position = Math::Lerp(fromTransform.position, toTransform.position, t);
+				blendtransform.rotation = Math::Quaternion::Slerp(fromTransform.rotation, toTransform.rotation, t);
+				blendtransform.scale = Math::Lerp(fromTransform.scale, toTransform.scale, t);
 
-		Transform blendtransform;
-		blendtransform.position = Math::Lerp(fromTransform.position, toTransform.position, t);
-		blendtransform.rotation = Math::Quaternion::Slerp(fromTransform.rotation, toTransform.rotation, t);
-		blendtransform.scale = Math::Lerp(fromTransform.scale, toTransform.scale, t);
-
-		return bone->toParentTransform * blendtransform.GetMatrix4();
+				return blendtransform.GetMatrix4();
+			}
+		}
+		return fromTransform.GetMatrix4();
 	}
-	return bone->toParentTransform * fromTransform.GetMatrix4();
+	return bone->toParentTransform;
 }
 
 const Model* Animator::GetModel() const
