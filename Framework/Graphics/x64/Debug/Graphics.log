@@ -1,10 +1,2 @@
-﻿  AnimationUtil.cpp
-  Animator.cpp
-  GaussianBlurEffect.cpp
-  PostProcessingEffect.cpp
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Graphics\Src\PostProcessingEffect.cpp(77,18): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  RenderObject.cpp
-  ShadowEffect.cpp
-  StandardEffect.cpp
-  Generating Code...
+﻿  AnimationBuilder.cpp
   Graphics.vcxproj -> C:\Users\lcv2032525\Desktop\CEngine\x64\Debug\Graphics.lib

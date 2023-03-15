@@ -8,11 +8,11 @@ using namespace CEngine::Graphics::AnimationUtil;
 
 enum class AnimationState : int
 {
-	Aiming_Idle,     	//0
-	Walk,               //1
-	Walk_B,		        //2
-	Turn_L,		        //3
-	Jump		        //4
+	Idle,     	//0
+	Jump               //1
+	//Walk_B,		        //2
+	//Turn_L,		        //3
+	//Jump		        //4
 };
 
 void GameState::Initialize()
@@ -35,16 +35,16 @@ void GameState::Initialize()
 	auto tm = TextureManager::Get();
 	auto mm = ModelManager::Get();
 
-	mCharacterModelID = mm->LoadModel("../../Assets/Models/Character/Ch35_nonPBR.model");
-	mm->AddAnimation(mCharacterModelID, "../../Assets/Models/Character/rifle_aiming_idle.model");
-	mm->AddAnimation(mCharacterModelID, "../../Assets/Models/Character/walking.model");
-	mm->AddAnimation(mCharacterModelID, "../../Assets/Models/Character/walking_backwards.model");
-	mm->AddAnimation(mCharacterModelID, "../../Assets/Models/Character/turn_left.model");
-	mm->AddAnimation(mCharacterModelID, "../../Assets/Models/Character/rifle_jump.model");
-
+	mCharacterModelID = mm->LoadModel("../../Assets/Models/Character_Final/Idle.model");
+	mm->AddAnimation(mCharacterModelID, "../../Assets/Models/Character_Final/Idle.model");
+	mm->AddAnimation(mCharacterModelID, "../../Assets/Models/Character_Final/Big_Jump.model");
+	//mm->AddAnimation(mCharacterModelID, "../../Assets/Models/Character/walking_backwards.model");
+	//mm->AddAnimation(mCharacterModelID, "../../Assets/Models/Character/turn_left.model");
+	//mm->AddAnimation(mCharacterModelID, "../../Assets/Models/Character/rifle_jump.model");
+	//
 	mCharacter = CreatingRenderGroup(mCharacterModelID, &mCharacterAnimator);
 	mCharacterAnimator.Initialize(mCharacterModelID);
-	mCharacterAnimator.PlayAnimation((int)AnimationState::Aiming_Idle, true);
+	mCharacterAnimator.PlayAnimation((int)AnimationState::Jump, true);
 
 	mGroundRenderObject.material.ambient = { 0.5f, 0.5f, 0.5f, 1.0f };
 	mGroundRenderObject.material.diffuse = { 0.8f, 0.8f, 0.8f, 1.0f };
@@ -74,25 +74,25 @@ void GameState::Update(float deltaTime)
 	
 	mFPS = 1.0f / deltaTime;
 
-	if (inputSystem->IsKeyPressed(KeyCode::UP))
-	{
-		mCharacterAnimator.PlayAnimation((int)AnimationState::Walk, true, 2.0f);
-	}
-	else if (inputSystem->IsKeyPressed(KeyCode::DOWN))
-	{
-		mCharacterAnimator.PlayAnimation((int)AnimationState::Walk_B, true, 2.0f);
-	}
-	else if (inputSystem->IsKeyPressed(KeyCode::LEFT))
+	if (inputSystem->IsKeyPressed(KeyCode::SPACE))
 	{
 		mCharacterAnimator.PlayAnimation((int)AnimationState::Jump, true, 2.0f);
 	}
-	else if (inputSystem->IsKeyPressed(KeyCode::RIGHT))
-	{
-		mCharacterAnimator.PlayAnimation((int)AnimationState::Turn_L, true, 2.0f);
-	}
+	//else if (inputSystem->IsKeyPressed(KeyCode::DOWN))
+	//{
+	//	mCharacterAnimator.PlayAnimation((int)AnimationState::Walk_B, true, 2.0f);
+	//}
+	//else if (inputSystem->IsKeyPressed(KeyCode::LEFT))
+	//{
+	//	mCharacterAnimator.PlayAnimation((int)AnimationState::Jump, true, 2.0f);
+	//}
+	//else if (inputSystem->IsKeyPressed(KeyCode::RIGHT))
+	//{
+	//	mCharacterAnimator.PlayAnimation((int)AnimationState::Turn_L, true, 2.0f);
+	//}
 	else if (inputSystem->IsKeyPressed(KeyCode::ENTER))
 	{
-		mCharacterAnimator.PlayAnimation((int)AnimationState::Aiming_Idle, true, 2.0f);
+		mCharacterAnimator.PlayAnimation((int)AnimationState::Idle, true, 2.0f);
 	}
 }
 

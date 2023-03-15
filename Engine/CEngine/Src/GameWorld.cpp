@@ -158,16 +158,6 @@ void GameWorld::LoadLevel(const std::filesystem::path& levelFile)
 
 			if (gameObject.HasMember("Position"))
 			{
-				/*auto transform = obj->GetComponent<TransformComponent>();
-				if (transform != nullptr)
-				{
-					const auto& pos = gameObject["Position"].GetArray();
-					const float x = pos[0].GetFloat();
-					const float y = pos[1].GetFloat();
-					const float z = pos[2].GetFloat();
-					transform->position = { x, y, z };
-				}*/
-
 				const auto& pos = gameObject["Position"].GetArray();
 				const float x = pos[0].GetFloat();
 				const float y = pos[1].GetFloat();

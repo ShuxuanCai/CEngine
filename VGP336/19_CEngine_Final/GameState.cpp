@@ -54,41 +54,5 @@ void GameState::Render()
 
 void GameState::DebugUI()
 {
-	mGameWorld.DebugUI();/*
-	SimpleDraw::Render(mCamera);
-	ImGui::Begin("Debug Control", nullptr, ImGuiWindowFlags_AlwaysAutoResize);
-	ImGui::Separator();
-
-	if (ImGui::Button("Add Object"))
-	{
-		auto gameObject = mGameWorld.CreateGameObject("");
-		gameObject->SetName(std::to_string(mHandles.size()).c_str());
-		mHandles.push_back(gameObject->GetHandle());
-	}
-
-	for (auto handle : mHandles)
-	{
-		auto gameObject = mGameWorld.GetGameObject(handle);
-		if (gameObject != nullptr)
-		{
-			if (ImGui::CollapsingHeader(gameObject->GetName().c_str(), ImGuiTreeNodeFlags_DefaultOpen))
-			{
-				auto transformComponent = gameObject->GetComponent<TransformComponent>();
-				if (transformComponent != nullptr)
-				{
-					if (ImGui::DragFloat3("Position##", &transformComponent->position.x, 0.01f));
-					{
-
-					}
-
-					if (ImGui::Button((std::string("Remove Object##") + gameObject->GetName()).c_str()))
-					{
-						mGameWorld.DestroyGameObject(handle);
-					}
-				}
-			}
-		}
-	}
-
-	ImGui::End();*/
+	mGameWorld.DebugUI();
 }

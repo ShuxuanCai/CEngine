@@ -39,7 +39,7 @@ Math::Quaternion Animation::GetRotation(float time) const
 			if (i > 0)
 			{
 				float lerpTime = (time - mRotationKeys[i - 1].time) / (mRotationKeys[i].time - mRotationKeys[i - 1].time);
-				Math::Quaternion rot = Math::Lerp(mRotationKeys[i - 1].key, mRotationKeys[i].key, lerpTime);
+				Math::Quaternion rot = Math::Quaternion::Slerp(mRotationKeys[i - 1].key, mRotationKeys[i].key, lerpTime);
 				return rot;
 			}
 			return mRotationKeys[i].key;

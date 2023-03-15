@@ -1,21 +1,2 @@
-﻿  Precompiled.cpp
-  AnimatorComponent.cpp
-  App.cpp
-  CEngine.cpp
-  CameraComponent.cpp
-  CameraService.cpp
-  ColiderComponent.cpp
-  FPSCameraControllerComponent.cpp
-  GameObject.cpp
-  GameObjectFactory.cpp
-  GameWorld.cpp
-  MeshComponent.cpp
-  ModelComponent.cpp
-  PhysicsComponent.cpp
-  PhysicsDebugDrawer.cpp
-  PhysicsService.cpp
-  RenderService.cpp
-  RigidBodyComponent.cpp
-  TransformComponent.cpp
-  Generating Code...
+﻿  GameWorld.cpp
   CEngine.vcxproj -> C:\Users\lcv2032525\Desktop\CEngine\x64\Debug\CEngine.lib

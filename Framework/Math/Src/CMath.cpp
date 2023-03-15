@@ -144,15 +144,15 @@ Quaternion Quaternion::Slerp(Quaternion q0, Quaternion q1, float t)
 {
     float dot = (q0.x * q1.x) + (q0.y * q1.y) + (q0.z * q1.z) + (q0.w * q1.w);
 
-    if (dot < 0.0f)
+    /*if (dot < 0.0f)
     {
         dot = -dot;
         q1.x = -q1.x;
         q1.y = -q1.y;
         q1.z = -q1.z;
         q1.w = -q1.w;
-    }
-    else if (dot > 0.999f)
+    }*/
+    if (dot > 0.999f)
     {
         return Normalize(Lerp(q0, q1, t));
     }

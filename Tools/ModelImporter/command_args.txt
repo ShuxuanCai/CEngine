@@ -16,3 +16,5 @@
 -scale 0.01 -animOnly 1 ../../Assets/Models/Character/turning_right_45_degrees.fbx ../../Assets/Models/Character/turning_right_45_degrees.model
 -scale 0.01 -animOnly 1 ../../Assets/Models/Character/walking.fbx ../../Assets/Models/Character/walking.model
 -scale 0.01 -animOnly 1 ../../Assets/Models/Character/walking_backwards.fbx ../../Assets/Models/Character/walking_backwards.model
+
+-scale 0.01 ../../Assets/Models/Character_Final/Idle.fbx ../../Assets/Models/Character_Final/Idle.model
