@@ -148,5 +148,7 @@ namespace CEngine::Math
 		}
 
 		static Matrix4 RotationAxis(const Vector3& axis, float rad);
+		static Matrix4 RotationQuaternion(const Quaternion& q);
+
 	};
 }

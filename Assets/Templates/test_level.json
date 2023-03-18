@@ -29,11 +29,6 @@
       "Name": "Player1",
       "Template": "../../Assets/Templates/test_player.json",
       "Position": [ 0.0, 1.0, 0.0 ]
-    },
-    {
-      "Name": "Player2",
-      "Template": "../../Assets/Templates/test_player.json",
-      "Position": [ 3.0, 0.0, 0.0 ]
     }
   ]
 }

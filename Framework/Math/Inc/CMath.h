@@ -8,10 +8,15 @@
 #include "Matrix4.h"
 #include "Quaternion.h"
 
+#include "Random.h"
+
 #include "Constant.h"
 
 #include "AABB.h"
 #include "Sphere.h"
+#include "OBB.h"
+#include "Plane.h"
+#include "Ray.h"
 
 namespace CEngine::Math
 {
@@ -197,4 +202,12 @@ namespace CEngine::Math
 	{
 		return { m._41, m._42, m._43 };
 	}
+
+	inline Matrix4 RotationAxis(const Vector3& axis, float rad);
+	inline Matrix4 RotationQuaternion(const Math::Quaternion& q);
+
+	bool Intersect(const Ray& ray, const Plane& plane, float& distance);
+	bool IsContained(const Vector3& point, const AABB& aabb);
+	bool IsContained(const Vector3& point, const OBB& obb);
+	bool GetContactPoint(const Ray& ray, const OBB& obb, Vector3& point, Vector3& normal);
 }

@@ -5,6 +5,7 @@
 #include <Graphics/Inc/Graphics.h>
 #include <Input/Inc/Input.h>
 #include <Math/Inc/CMath.h>
+#include <Physics/Inc/Physics.h>
 
 // rapid json files
 #include <rapidjson/document.h>

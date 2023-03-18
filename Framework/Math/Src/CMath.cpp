@@ -14,34 +14,34 @@ const Vector3 Vector3::XAxis(1.0f, 0.0f, 0.0f);
 const Vector3 Vector3::YAxis(0.0f, 1.0f, 0.0f);
 const Vector3 Vector3::ZAxis(0.0f, 0.0f, 1.0f);
 
-Matrix4 Matrix4::RotationAxis(const Vector3& axis, float rad)
-{
-    const Vector3 u = Normalize(axis);
-    const float x = u.x;
-    const float y = u.y;
-    const float z = u.z;
-    const float s = sin(rad);
-    const float c = cos(rad);
-
-    return {
-        c + (x * x * (1.0f - c)),
-        x * y * (1.0f - c) + z * s,
-        x * z * (1.0f - c) - y * s,
-        0.0f,
-
-        x * y * (1.0f - c) - z * s,
-        c + (y * y * (1.0f - c)),
-        y * z * (1.0f - c) + x * s,
-        0.0f,
-
-        x * z * (1.0f - c) + y * s,
-        y * z * (1.0f - c) - x * s,
-        c + (z * z * (1.0f - c)),
-        0.0f,
-
-        0.0f, 0.0f, 0.0f, 1.0f
-    };
-}
+//Matrix4 Matrix4::RotationAxis(const Vector3& axis, float rad)
+//{
+//    const Vector3 u = Normalize(axis);
+//    const float x = u.x;
+//    const float y = u.y;
+//    const float z = u.z;
+//    const float s = sin(rad);
+//    const float c = cos(rad);
+//
+//    return {
+//        c + (x * x * (1.0f - c)),
+//        x * y * (1.0f - c) + z * s,
+//        x * z * (1.0f - c) - y * s,
+//        0.0f,
+//
+//        x * y * (1.0f - c) - z * s,
+//        c + (y * y * (1.0f - c)),
+//        y * z * (1.0f - c) + x * s,
+//        0.0f,
+//
+//        x * z * (1.0f - c) + y * s,
+//        y * z * (1.0f - c) - x * s,
+//        c + (z * z * (1.0f - c)),
+//        0.0f,
+//
+//        0.0f, 0.0f, 0.0f, 1.0f
+//    };
+//}
 
 const Quaternion Quaternion::Zero{ 0.0f, 0.0f, 0.0f, 0.0f };
 const Quaternion Quaternion::Indentity{ 0.0f, 0.0f, 0.0f, 1.0f }; // ??? I check online, it said
@@ -114,6 +114,29 @@ Quaternion Quaternion::LookRotation(const Vector3& forward, const Vector3& up)
     return q;
 }
 
+//Matrix4 Matrix4::RotationQuaternion(const Math::Quaternion& q)
+//{
+//    return
+//    {
+//        1.0f - (2.0f * q.y * q.y) - (2.0f * q.z * q.z),
+//        (2.0f * q.x * q.y) + (2.0f * q.z * q.w),
+//        (2.0f * q.x * q.z) - (2.0f * q.y * q.w),
+//        0.0f,
+//
+//        (2.0f * q.x * q.y) - (2.0f * q.w * q.z),
+//        1.0f - (2.0f * q.x * q.x) - (2.0f * q.z * q.z),
+//        (2.0f * q.y * q.z) + (2.0f * q.w * q.x),
+//        0.0f,
+//
+//        (2.0f * q.x * q.z) + (2.0f * q.w * q.y),
+//        (2.0f * q.y * q.z) - (2.0f * q.w * q.x),
+//        1.0f - (2.0f * q.x * q.x) - (2.0f * q.y * q.y),
+//        0.0f,
+//
+//        0.0f, 0.0f, 0.0f, 1.0f
+//    };
+//}
+
 Matrix4 Quaternion::MatrixRatationFromQuaternion(const Quaternion& q)
 {
     return Matrix4
@@ -184,4 +207,114 @@ Quaternion Quaternion::Conjugate(const Quaternion& q)
 Quaternion Quaternion::QuaternionNormalize(const Quaternion& q)
 {
     return q / Magnitude(q);
+}
+
+bool CEngine::Math::Intersect(const Ray& ray, const Plane& plane, float& distance)
+{
+    const float orgDotN = Dot(ray.origin, plane.n);
+    const float dirDotN = Dot(ray.direction, plane.n);
+
+    // Check if ray is parallel to the plane
+    if (Abs(dirDotN) < 0.0001f)
+    {
+        if (Abs(orgDotN - plane.d) < 0.0001f)
+        {
+            distance = 0.0f;
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    // Compute distance
+    distance = (plane.d - orgDotN) / dirDotN;
+    return true;
+
+}
+
+bool CEngine::Math::IsContained(const Vector3& point, const AABB& aabb)
+{
+    auto min = aabb.Min();
+    auto max = aabb.Max();
+    if ((point.x < min.x) || (point.x > max.x) ||
+        (point.y < min.y) || (point.y > max.y) ||
+        (point.z < min.z) || (point.y > max.z))
+    {
+        return false;
+    }
+    return true;
+}
+
+bool CEngine::Math::IsContained(const Vector3& point, const OBB& obb)
+{
+    // Compute the world-to-local matrices
+    Math::Matrix4 matTrans = Math::Matrix4::Translation(obb.center);
+    Math::Matrix4 matRot = Math::Matrix4::RotationQuaternion(obb.rot);
+    Math::Matrix4 matScale = Math::Matrix4::Scaling(obb.extend);
+    Math::Matrix4 toWorld = matScale * matRot * matTrans;
+    Math::Matrix4 toLocal = Inverse(toWorld);
+
+    // Transform the point into the OBB's local space
+    Vector3 localPoint = TransformCoord(point, toLocal);
+
+    // Test against local AABB
+    return IsContained(localPoint, AABB{ Vector3::Zero, Vector3::One });
+}
+
+bool CEngine::Math::GetContactPoint(const Ray& ray, const OBB& obb, Vector3& point, Vector3& normal)
+{
+    // Compute the local-to-world/world-to-local matrices
+    Matrix4 matTrans = Matrix4::Translation(obb.center);
+    Matrix4 matRot = Matrix4::RotationQuaternion(obb.rot);
+    Matrix4 matWorld = matRot * matTrans;
+    Matrix4 matWorldInv = Inverse(matWorld);
+
+    // Transform the ray into the OBB's local space
+    Vector3 org = TransformCoord(ray.origin, matWorldInv);
+    Vector3 dir = TransformNormal(ray.direction, matWorldInv);
+    Ray localRay{ org, dir };
+
+    Plane planes[] =
+    {
+        { {  0.0f,  0.0f, -1.0f }, obb.extend.z },
+        { {  0.0f,  0.0f,  1.0f }, obb.extend.z },
+        { {  0.0f, -1.0f,  0.0f }, obb.extend.y },
+        { {  0.0f,  1.0f,  0.0f }, obb.extend.y },
+        { { -1.0f,  0.0f,  0.0f }, obb.extend.x },
+        { {  1.0f,  0.0f,  0.0f }, obb.extend.x }
+    };
+
+    uint32_t numIntersections = 0;
+    for (uint32_t i = 0; i < 6; ++i)
+    {
+        const float d = Dot(org, planes[i].n);
+        if (d > planes[i].d)
+        {
+            float distance = 0.0f;
+            if (Intersect(localRay, planes[i], distance) && distance >= 0.0f)
+            {
+                Vector3 pt = org + (dir * distance);
+                if (abs(pt.x) <= obb.extend.x + 0.01f &&
+                    abs(pt.y) <= obb.extend.y + 0.01f &&
+                    abs(pt.z) <= obb.extend.z + 0.01f)
+                {
+                    point = pt;
+                    normal = planes[i].n;
+                    ++numIntersections;
+                }
+            }
+        }
+    }
+
+    if (numIntersections == 0)
+    {
+        return false;
+    }
+
+    point = TransformCoord(point, matWorld);
+    normal = TransformNormal(normal, matWorld);
+    return true;
+
 }

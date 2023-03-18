@@ -48,6 +48,8 @@ namespace CEngine::Graphics
 		void AddAABB(const Vector3& min, const Vector3& max, Color color);
 		void AddAABB(float minX, float minY, float minZ, float maxX, float maxY, float maxZ, Color color);
 
+		void AddOBB(const Math::OBB& obb, const Color& color);
+
 		void AddFilledAABB(const Vector3& min, const Vector3& max, Color color);
 		void AddFilledAABB(float minX, float minY, float minZ, float maxX, float maxY, float maxZ, Color color);
 

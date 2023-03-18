@@ -24,7 +24,11 @@
     <ClInclude Include="Inc\Common.h" />
     <ClInclude Include="Inc\Constant.h" />
     <ClInclude Include="Inc\Matrix4.h" />
+    <ClInclude Include="Inc\OBB.h" />
+    <ClInclude Include="Inc\Plane.h" />
     <ClInclude Include="Inc\Quaternion.h" />
+    <ClInclude Include="Inc\Random.h" />
+    <ClInclude Include="Inc\Ray.h" />
     <ClInclude Include="Inc\Sphere.h" />
     <ClInclude Include="Inc\Vector2.h" />
     <ClInclude Include="Inc\Vector3.h" />
@@ -39,6 +43,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Src\Random.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.vcxproj">
