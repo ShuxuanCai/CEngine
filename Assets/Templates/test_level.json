@@ -13,6 +13,10 @@
     },
     "MyService": {
 
+    },
+    "TerrainService": {
+      "File": "../../Assets/Images/terrain/heightmap_200x200.raw",
+      "Height": 5.0
     }
   },
   "GameObjects": [

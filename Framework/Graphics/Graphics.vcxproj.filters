@@ -67,6 +67,12 @@
     <Filter Include="Src\Model">
       <UniqueIdentifier>{cb330f8f-15aa-462b-9d9c-4e02f42021f8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Inc\Terrain">
+      <UniqueIdentifier>{6220a7b0-6cb0-457a-a8f4-b05cd9a6fac1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Terrain">
+      <UniqueIdentifier>{b0607fb3-e39b-40c9-bdbe-2b075b7189ed}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Inc\Graphics.h">
@@ -186,6 +192,15 @@
     <ClInclude Include="Inc\ModelManager.h">
       <Filter>Inc\Model</Filter>
     </ClInclude>
+    <ClInclude Include="Inc\Terrain.h">
+      <Filter>Inc\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\TerrainEffect.h">
+      <Filter>Inc\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\MeshUtil.h">
+      <Filter>Inc\Mesh</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\Precompiled.cpp">
@@ -265,6 +280,12 @@
     </ClCompile>
     <ClCompile Include="Src\ModelManager.cpp">
       <Filter>Src\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Terrain.cpp">
+      <Filter>Src\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\TerrainEffect.cpp">
+      <Filter>Src\Effect</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

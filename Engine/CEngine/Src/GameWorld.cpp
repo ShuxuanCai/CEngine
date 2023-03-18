@@ -4,6 +4,7 @@
 #include "CameraService.h"
 #include "RenderService.h"
 #include "PhysicsService.h"
+#include "TerrainService.h"
 
 #include "TransformComponent.h"
 
@@ -136,6 +137,23 @@ void GameWorld::LoadLevel(const std::filesystem::path& levelFile)
 		else if (strcmp(serviceName, "PhysicsService") == 0)
 		{
 			auto physicsService = AddService<PhysicsService>();
+		}
+		else if (strcmp(serviceName, "TerrainService") == 0)
+		{
+			auto terrainService = AddService<TerrainService>();
+			float height = 0.0f;
+			if (service.value.HasMember("Height"))
+			{
+				height = service.value["Height"].GetFloat();
+			}
+			if (service.value.HasMember("File"))
+			{
+				auto fileName = service.value["File"].GetString();
+				terrainService->LoadTerrain(fileName, height);
+			}
+
+			terrainService->LoadTexture("", 0);
+			terrainService->LoadTexture("", 1);
 		}
 		else
 		{

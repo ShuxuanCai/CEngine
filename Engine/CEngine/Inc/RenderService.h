@@ -9,6 +9,7 @@ namespace CEngine
 	class MeshComponent;
 	class TransformComponent;
 	class AnimatorComponent;
+	class TerrainService;
 
 	class RenderService final : public Service
 	{
@@ -45,10 +46,12 @@ namespace CEngine
 		RenderEntries mRenderEntries;
 
 		const CameraService* mCameraService = nullptr;
+		TerrainService* mTerrainService = nullptr;
 
 		Graphics::DirectionalLight mDirectionalLight;
 		Graphics::StandardEffect mStandardEffect;
 		Graphics::ShadowEffect mShadowEffect;
+		Graphics::TerrainEffect mTerrainEffect;
 
 		float mFPS = 0.0f;
 	};

@@ -22,6 +22,7 @@
 #include "PostProcessingEffect.h"
 #include "StandardEffect.h"
 #include "ShadowEffect.h"
+#include "TerrainEffect.h"
 
 // Material headers
 #include "Colors.h"
@@ -41,6 +42,7 @@
 #include "Model.h"
 #include "ModelIO.h"
 #include "ModelManager.h"
+#include "Terrain.h"
 
 // Renderer headers
 #include "RenderObject.h"

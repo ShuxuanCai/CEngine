@@ -23,6 +23,7 @@ namespace CEngine
 		Camera,
 		Render,
 		Physics,
+		Terrain,
 		Count
 	};
 }

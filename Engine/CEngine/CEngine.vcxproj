@@ -156,6 +156,7 @@
     <ClInclude Include="Inc\ColiderComponent.h" />
     <ClInclude Include="Inc\Common.h" />
     <ClInclude Include="Inc\Component.h" />
+    <ClInclude Include="Inc\Event.h" />
     <ClInclude Include="Inc\FPSCameraControllerComponent.h" />
     <ClInclude Include="Inc\GameObject.h" />
     <ClInclude Include="Inc\GameObjectFactory.h" />
@@ -169,6 +170,7 @@
     <ClInclude Include="Inc\RenderService.h" />
     <ClInclude Include="Inc\RigidBodyComponent.h" />
     <ClInclude Include="Inc\Service.h" />
+    <ClInclude Include="Inc\TerrainService.h" />
     <ClInclude Include="Inc\TransformComponent.h" />
     <ClInclude Include="Inc\TypeIds.h" />
     <ClInclude Include="RapidJson\rapidjson\allocators.h" />
@@ -235,6 +237,7 @@
     </ClCompile>
     <ClCompile Include="Src\RenderService.cpp" />
     <ClCompile Include="Src\RigidBodyComponent.cpp" />
+    <ClCompile Include="Src\TerrainService.cpp" />
     <ClCompile Include="Src\TransformComponent.cpp" />
   </ItemGroup>
   <ItemGroup>

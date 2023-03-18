@@ -31,6 +31,15 @@
     <Filter Include="Inc\Physics">
       <UniqueIdentifier>{3df04550-9acf-4c33-a5a4-2dae2af35e0a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Inc\Terrain">
+      <UniqueIdentifier>{c44d5f58-1db1-4b8d-8dc3-67c372ba245d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\Event">
+      <UniqueIdentifier>{74de4d33-66b9-48f7-8374-d6a4fdf199cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Terrain">
+      <UniqueIdentifier>{d779a89e-dc15-4580-bfb5-e37144d14b93}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Inc\CEngine.h">
@@ -222,6 +231,12 @@
     <ClInclude Include="Inc\MeshComponent.h">
       <Filter>Inc\World</Filter>
     </ClInclude>
+    <ClInclude Include="Inc\TerrainService.h">
+      <Filter>Inc\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Event.h">
+      <Filter>Inc\Event</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\App.cpp">
@@ -280,6 +295,9 @@
     </ClCompile>
     <ClCompile Include="Src\MeshComponent.cpp">
       <Filter>Src\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\TerrainService.cpp">
+      <Filter>Src\Terrain</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

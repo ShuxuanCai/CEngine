@@ -6,6 +6,7 @@
 #include "AnimatorComponent.h"
 
 #include "CameraService.h"
+#include "TerrainService.h"
 #include "GameWorld.h"
 #include "GameObject.h"
 
@@ -16,6 +17,7 @@ using namespace CEngine::Math;
 void RenderService::Initialize()
 {
 	mCameraService = GetOwner().GetService<CameraService>();
+	mTerrainService = GetOwner().GetService<TerrainService>();
 
 	mDirectionalLight.direction = Math::Normalize({ 1.0f, -1.0f, 1.0f });
 	mDirectionalLight.ambient = { 0.4f, 0.4f, 0.0f, 1.0f };
@@ -27,10 +29,14 @@ void RenderService::Initialize()
 
 	mShadowEffect.Initialize();
 	mShadowEffect.SetDirectionalLight(mDirectionalLight);
+
+	mTerrainEffect.Initialize();
+	mTerrainEffect.SetDirectionalLight(mDirectionalLight);
 }
 
 void RenderService::Terminate()
 {
+	mTerrainEffect.Terminate();
 	mStandardEffect.Terminate();
 	mShadowEffect.Terminate();
 }
@@ -44,6 +50,7 @@ void RenderService::Render()
 {
 	const auto& camera = mCameraService->GetMain();
 	mStandardEffect.SetCamera(camera);
+	mTerrainEffect.SetCamera(camera);
 
 	// apply transforms to models
 	for (auto& entry : mRenderEntries)
@@ -58,6 +65,13 @@ void RenderService::Render()
 		{
 			renderObject.transform = transform;
 		}
+	}
+
+	if (mTerrainService != nullptr)
+	{
+		mTerrainEffect.Begin();
+			mTerrainEffect.Render(mTerrainService->GetTerrainRenderObject());
+		mTerrainEffect.End();
 	}
 
 	mShadowEffect.Begin();
