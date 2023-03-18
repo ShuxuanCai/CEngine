@@ -1,44 +1,43 @@
 ﻿  Precompiled.cpp
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(178,55): error C2039: 'Quaternion': is not a member of 'CEngine::Math'
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(3): message : see declaration of 'CEngine::Math'
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(178,65): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(178,65): error C2143: syntax error: missing ',' before '&'
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(152,22): error C3861: 'Normalize': identifier not found
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(182,20): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(182,26): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(182,41): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(182,47): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(183,13): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(183,19): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(183,34): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(183,40): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(184,13): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(184,19): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(184,34): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(184,40): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(187,13): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(187,19): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(187,34): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(187,40): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(188,20): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(188,26): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(188,41): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(188,47): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(189,13): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(189,19): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(189,34): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(189,40): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(192,13): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(192,19): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(192,34): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(192,40): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(193,13): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(193,19): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(193,34): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(193,40): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(194,20): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(194,26): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(194,41): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(194,47): error C2065: 'q': undeclared identifier
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(181,4): error C2440: 'return': cannot convert from 'initializer list' to 'CEngine::Math::Matrix4'
-C:\Users\lcv2032525\Desktop\CEngine\Framework\Math\Inc\Matrix4.h(198,1): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+  Animation.cpp
+  AnimationBuilder.cpp
+  AnimationUtil.cpp
+  Animator.cpp
+  BlendState.cpp
+  Camera.cpp
+  ConstantBuffer.cpp
+  DebugUI.cpp
+  GaussianBlurEffect.cpp
+  GraphicsSystem.cpp
+  MeshBuffer.cpp
+  MeshBuilder.cpp
+  ModelIO.cpp
+C:\Users\lcv2032525\Desktop\CEngine\Framework\Graphics\Src\ModelIO.cpp(12,49): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\Users\lcv2032525\Desktop\CEngine\Framework\Graphics\Src\ModelIO.cpp(18,40): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\Users\lcv2032525\Desktop\CEngine\Framework\Graphics\Src\ModelIO.cpp(24,37): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\Users\lcv2032525\Desktop\CEngine\Framework\Graphics\Src\ModelIO.cpp(182,18): warning C4477: 'fprintf_s' : format string '%u' requires an argument of type 'unsigned int', but variadic argument 1 has type 'unsigned __int64'
+C:\Users\lcv2032525\Desktop\CEngine\Framework\Graphics\Src\ModelIO.cpp(182,18): message : consider using '%zu' in the format string
+C:\Users\lcv2032525\Desktop\CEngine\Framework\Graphics\Src\ModelIO.cpp(264,52): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\Users\lcv2032525\Desktop\CEngine\Framework\Graphics\Src\ModelIO.cpp(275,58): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\Users\lcv2032525\Desktop\CEngine\Framework\Graphics\Src\ModelIO.cpp(316,25): warning C4018: '<': signed/unsigned mismatch
+C:\Users\lcv2032525\Desktop\CEngine\Framework\Graphics\Src\ModelIO.cpp(322,25): warning C4018: '<': signed/unsigned mismatch
+C:\Users\lcv2032525\Desktop\CEngine\Framework\Graphics\Src\ModelIO.cpp(346,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\lcv2032525\Desktop\CEngine\Framework\Graphics\Src\ModelIO.cpp(379,54): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\Users\lcv2032525\Desktop\CEngine\Framework\Graphics\Src\ModelIO.cpp(388,62): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
+  ModelManager.cpp
+  PixelShader.cpp
+  RenderObject.cpp
+  RenderTarget.cpp
+  Sampler.cpp
+  ShadowEffect.cpp
+  SimpleDraw.cpp
+  Generating Code...
+  Compiling...
+  StandardEffect.cpp
+  Texture.cpp
+  PostProcessingEffect.cpp
+C:\Users\lcv2032525\Desktop\CEngine\Framework\Graphics\Src\PostProcessingEffect.cpp(77,18): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  TextureManager.cpp
+  VertexShader.cpp
+  Generating Code...
+  Graphics.vcxproj -> C:\Users\lcv2032525\Desktop\CEngine\x64\Debug\Graphics.lib

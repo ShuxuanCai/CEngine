@@ -6,16 +6,18 @@
     "ModelComponent": {
       "FileName": "../../Assets/Models/Character_Final/Idle.model",
       "Animations": [
-        "../../Assets/Models/Character_Final/Idle.model",
-        "../../Assets/Models/Character_Final/Big_Jump.model"
+        "../../Assets/Models/Character_Final/Idle.animset",
+        "../../Assets/Models/Character_Final/Big_Jump.animset"
       ]
+    },
+    "AnimatorComponent": {
     },
     "ColiderComponent": {
       "Extents": [ 0.5, 1.0, 0.5 ],
       "Origin": [ 0.0, -0.5, 0.0 ]
     },
     "RigidBodyComponent": {
-      "Mass":  2.0
+      "Mass": 2.0
     }
   }
-}
+  }

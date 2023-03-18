@@ -47,11 +47,11 @@ void GameObjectFactory::Make(const std::filesystem::path& templateFile, GameObje
         const char* componentName = component.name.GetString();
         if (TryMake(componentName, component.value, gameObject))
         {
-
+            
         }
         else if (strcmp(componentName, "AnimatorComponent") == 0)
         {
-            
+            auto animatorComponent = gameObject.AddComponent<AnimatorComponent>();
         }
         else if (strcmp(componentName, "CameraComponent") == 0)
         {

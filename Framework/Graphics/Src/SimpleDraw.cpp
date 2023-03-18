@@ -532,47 +532,47 @@ void SimpleDraw::AddAABB(float minX, float minY, float minZ, float maxX, float m
 	SimpleDraw::AddLine(botLeftF, botLeftB, color);
 }
 
-void AddOBB(const Math::OBB& obb, const Color& color)
-{
-	Math::Matrix4 matTrans = Math::Matrix4::Translation(obb.center);
-	Math::Matrix4 matRot = Math::Matrix4::RotationQuaternion(obb.rot);
-	Math::Matrix4 matScale = Math::Matrix4::Scaling(obb.extend);
-	Math::Matrix4 toWorld = matScale * matRot * matTrans;
-
-	Math::Vector3 points[] =
-	{
-		// Front quad
-		Math::Vector3(-1.0f, -1.0f, -1.0f),
-		Math::Vector3(-1.0f, +1.0f, -1.0f),
-		Math::Vector3(+1.0f, +1.0f, -1.0f),
-		Math::Vector3(+1.0f, -1.0f, -1.0f),
-		//Back quad
-		Math::Vector3(-1.0f, -1.0f, +1.0f),
-		Math::Vector3(-1.0f, +1.0f, +1.0f),
-		Math::Vector3(+1.0f, +1.0f, +1.0f),
-		Math::Vector3(+1.0f, -1.0f, +1.0f),
-	};
-
-	for (auto& p : points)
-	{
-		p = Math::TransformCoord(p, toWorld);
-	}
-
-	AddLine(points[0], points[1], color);
-	AddLine(points[1], points[2], color);
-	AddLine(points[2], points[3], color);
-	AddLine(points[3], points[0], color);
-
-	AddLine(points[0], points[4], color);
-	AddLine(points[1], points[5], color);
-	AddLine(points[2], points[6], color);
-	AddLine(points[3], points[7], color);
-
-	AddLine(points[4], points[5], color);
-	AddLine(points[5], points[6], color);
-	AddLine(points[6], points[7], color);
-	AddLine(points[7], points[4], color);
-}
+//void AddOBB(const Math::OBB& obb, const Color& color)
+//{
+//	Math::Matrix4 matTrans = Math::Matrix4::Translation(obb.center);
+//	Math::Matrix4 matRot = Math::Matrix4::RotationQuaternion(obb.rot);
+//	Math::Matrix4 matScale = Math::Matrix4::Scaling(obb.extend);
+//	Math::Matrix4 toWorld = matScale * matRot * matTrans;
+//
+//	Math::Vector3 points[] =
+//	{
+//		// Front quad
+//		Math::Vector3(-1.0f, -1.0f, -1.0f),
+//		Math::Vector3(-1.0f, +1.0f, -1.0f),
+//		Math::Vector3(+1.0f, +1.0f, -1.0f),
+//		Math::Vector3(+1.0f, -1.0f, -1.0f),
+//		//Back quad
+//		Math::Vector3(-1.0f, -1.0f, +1.0f),
+//		Math::Vector3(-1.0f, +1.0f, +1.0f),
+//		Math::Vector3(+1.0f, +1.0f, +1.0f),
+//		Math::Vector3(+1.0f, -1.0f, +1.0f),
+//	};
+//
+//	for (auto& p : points)
+//	{
+//		p = Math::TransformCoord(p, toWorld);
+//	}
+//
+//	AddLine(points[0], points[1], color);
+//	AddLine(points[1], points[2], color);
+//	AddLine(points[2], points[3], color);
+//	AddLine(points[3], points[0], color);
+//
+//	AddLine(points[0], points[4], color);
+//	AddLine(points[1], points[5], color);
+//	AddLine(points[2], points[6], color);
+//	AddLine(points[3], points[7], color);
+//
+//	AddLine(points[4], points[5], color);
+//	AddLine(points[5], points[6], color);
+//	AddLine(points[6], points[7], color);
+//	AddLine(points[7], points[4], color);
+//}
 
 void SimpleDraw::AddFilledAABB(const Vector3& min, const Vector3& max, Color color)
 {
