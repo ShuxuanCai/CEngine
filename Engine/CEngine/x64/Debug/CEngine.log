@@ -1,2 +1,26 @@
-﻿  TerrainService.cpp
-  CEngine.vcxproj -> C:\Users\lcv2032525\Desktop\CEngine\x64\Debug\CEngine.lib
+﻿  Precompiled.cpp
+  AnimatorComponent.cpp
+  App.cpp
+  CameraComponent.cpp
+  CameraService.cpp
+  CEngine.cpp
+  ColiderComponent.cpp
+  FollowCameraControllerComponent.cpp
+  FPSCameraControllerComponent.cpp
+  GameObject.cpp
+  GameObjectFactory.cpp
+  GameWorld.cpp
+  MeshComponent.cpp
+  ModelComponent.cpp
+  PhysicsComponent.cpp
+  PhysicsDebugDrawer.cpp
+  PhysicsService.cpp
+  PlayerControllerComponent.cpp
+  RenderService.cpp
+  RigidBodyComponent.cpp
+  TerrainService.cpp
+  Generating Code...
+  Compiling...
+  TransformComponent.cpp
+  Generating Code...
+  CEngine.vcxproj -> D:\CEngine\x64\Debug\CEngine.lib

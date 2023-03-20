@@ -2,3 +2,5 @@ C:\Users\caish\Downloads\CEngine\CEngine\x64\Debug\Bullet.pdb
 C:\Users\caish\Downloads\CEngine\CEngine\External\Bullet\x64\Debug\Bullet.pdb
 F:\CEngine\CEngine\x64\Debug\Bullet.pdb
 F:\CEngine\CEngine\External\Bullet\x64\Debug\Bullet.pdb
+D:\CEngine\x64\Debug\Bullet.pdb
+D:\CEngine\External\Bullet\x64\Debug\Bullet.pdb

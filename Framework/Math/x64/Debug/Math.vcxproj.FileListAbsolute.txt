@@ -8,3 +8,5 @@ C:\Users\caish\Downloads\CEngine\CEngine\x64\Debug\Math.pdb
 C:\Users\caish\Downloads\CEngine\CEngine\Framework\Math\x64\Debug\Math.pdb
 F:\CEngine\CEngine\x64\Debug\Math.pdb
 F:\CEngine\CEngine\Framework\Math\x64\Debug\Math.pdb
+D:\CEngine\x64\Debug\Math.pdb
+D:\CEngine\Framework\Math\x64\Debug\Math.pdb

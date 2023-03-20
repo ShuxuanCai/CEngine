@@ -8,3 +8,5 @@ C:\Users\caish\Downloads\CEngine\CEngine\x64\Debug\CEngine.pdb
 C:\Users\caish\Downloads\CEngine\CEngine\Engine\CEngine\x64\Debug\CEngine.pdb
 F:\CEngine\CEngine\x64\Debug\CEngine.pdb
 F:\CEngine\CEngine\Engine\CEngine\x64\Debug\CEngine.pdb
+D:\CEngine\x64\Debug\CEngine.pdb
+D:\CEngine\Engine\CEngine\x64\Debug\CEngine.pdb

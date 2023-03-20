@@ -8,3 +8,5 @@ C:\Users\caish\Downloads\CEngine\CEngine\x64\Debug\Graphics.pdb
 C:\Users\caish\Downloads\CEngine\CEngine\Framework\Graphics\x64\Debug\Graphics.pdb
 F:\CEngine\CEngine\x64\Debug\Graphics.pdb
 F:\CEngine\CEngine\Framework\Graphics\x64\Debug\Graphics.pdb
+D:\CEngine\x64\Debug\Graphics.pdb
+D:\CEngine\Framework\Graphics\x64\Debug\Graphics.pdb

@@ -237,6 +237,12 @@
     <ClInclude Include="Inc\Event.h">
       <Filter>Inc\Event</Filter>
     </ClInclude>
+    <ClInclude Include="Inc\FollowCameraControllerComponent.h">
+      <Filter>Inc\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\PlayerControllerComponent.h">
+      <Filter>Inc\World</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\App.cpp">
@@ -298,6 +304,12 @@
     </ClCompile>
     <ClCompile Include="Src\TerrainService.cpp">
       <Filter>Src\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\FollowCameraControllerComponent.cpp">
+      <Filter>Src\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\PlayerControllerComponent.cpp">
+      <Filter>Src\World</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

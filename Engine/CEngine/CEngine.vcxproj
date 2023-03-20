@@ -157,6 +157,7 @@
     <ClInclude Include="Inc\Common.h" />
     <ClInclude Include="Inc\Component.h" />
     <ClInclude Include="Inc\Event.h" />
+    <ClInclude Include="Inc\FollowCameraControllerComponent.h" />
     <ClInclude Include="Inc\FPSCameraControllerComponent.h" />
     <ClInclude Include="Inc\GameObject.h" />
     <ClInclude Include="Inc\GameObjectFactory.h" />
@@ -167,6 +168,7 @@
     <ClInclude Include="Inc\PhysicsComponent.h" />
     <ClInclude Include="Inc\PhysicsDebugDrawer.h" />
     <ClInclude Include="Inc\PhysicsService.h" />
+    <ClInclude Include="Inc\PlayerControllerComponent.h" />
     <ClInclude Include="Inc\RenderService.h" />
     <ClInclude Include="Inc\RigidBodyComponent.h" />
     <ClInclude Include="Inc\Service.h" />
@@ -220,6 +222,7 @@
     <ClCompile Include="Src\CameraService.cpp" />
     <ClCompile Include="Src\CEngine.cpp" />
     <ClCompile Include="Src\ColiderComponent.cpp" />
+    <ClCompile Include="Src\FollowCameraControllerComponent.cpp" />
     <ClCompile Include="Src\FPSCameraControllerComponent.cpp" />
     <ClCompile Include="Src\GameObject.cpp" />
     <ClCompile Include="Src\GameObjectFactory.cpp" />
@@ -229,6 +232,7 @@
     <ClCompile Include="Src\PhysicsComponent.cpp" />
     <ClCompile Include="Src\PhysicsDebugDrawer.cpp" />
     <ClCompile Include="Src\PhysicsService.cpp" />
+    <ClCompile Include="Src\PlayerControllerComponent.cpp" />
     <ClCompile Include="Src\Precompiled.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

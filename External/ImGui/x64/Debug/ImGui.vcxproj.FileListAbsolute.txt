@@ -8,3 +8,5 @@ C:\Users\caish\Downloads\CEngine\CEngine\x64\Debug\ImGui.pdb
 C:\Users\caish\Downloads\CEngine\CEngine\External\ImGui\x64\Debug\ImGui.pdb
 F:\CEngine\CEngine\x64\Debug\ImGui.pdb
 F:\CEngine\CEngine\External\ImGui\x64\Debug\ImGui.pdb
+D:\CEngine\x64\Debug\ImGui.pdb
+D:\CEngine\External\ImGui\x64\Debug\ImGui.pdb
